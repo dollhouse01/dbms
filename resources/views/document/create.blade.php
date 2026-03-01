@@ -1,0 +1,65 @@
+{{ Form::open(['url' => 'document', 'method' => 'post', 'enctype' => 'multipart/form-data']) }}
+<div class="modal-body">
+    @php
+        $subscriptionData = currentSubscription();
+    @endphp
+    @if (settings()['openai_module'] == 'on' &&
+            (Auth::user()->type !== 'super admin' ||
+                ($subscriptionData['pricing_feature_settings'] === 'off' ||
+                    $subscriptionData['subscription']->enabled_openai == 1)))
+        <div class="col-auto">
+
+            <a href="javascript:void(0)" class="btn btn-primary mb-2 aiModal" data-size="lg"
+                data-url="{{ route('generate.template', ['document']) }}" data-title="{{ __('AI Content Generator') }}">
+                <span>{{ __('AI Content Generator') }}</span>
+            </a>
+        </div>
+    @endif
+    <div class="row">
+        <div class="form-group col-md-6">
+            {{ Form::label('assign_to', __('Assign To'), ['class' => 'form-label']) }}
+            {{ Form::select('assign_to', $client, null, ['class' => 'form-control select2']) }}
+        </div>
+        <div class="form-group  col-md-6">
+            {{ Form::label('name', __('Name'), ['class' => 'form-label']) }}
+            {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => __('Enter document name')]) }}
+        </div>
+        <div class="form-group col-md-6">
+            {{ Form::label('category_id', __('Category'), ['class' => 'form-label']) }}
+            {{ Form::select('category_id', $category, null, ['class' => 'form-control select2', 'id' => 'category']) }}
+        </div>
+        <div class="form-group col-md-6">
+            {{ Form::label('sub_category_id', __('Sub Category'), ['class' => 'form-label']) }}
+            <div class="sc_div">
+                <select class="form-control select2 sub_category_id" id="sub_category_id" name="sub_category_id">
+                    <option value="">{{ __('Select Sub Category') }}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group  col-md-4">
+            {{ Form::label('document', __('Document'), ['class' => 'form-label']) }}
+            {{ Form::file('document', ['class' => 'form-control']) }}
+        </div>
+        <div class="form-group col-md-4">
+            {{ Form::label('tages', __('Tages'), ['class' => 'form-label']) }}
+            {{ Form::select('tages[]', $tages, null, ['class' => 'form-control select2', 'multiple']) }}
+        </div>
+        <div class="form-group col-md-4">
+            {{ Form::label('stage_id', __('Stage'), ['class' => 'form-label']) }}
+            {{ Form::select('stage_id', $stage_id, null, ['class' => 'form-control select2']) }}
+        </div>
+        <div class="form-group  col-md-12">
+            {{ Form::label('description', __('Description'), ['class' => 'form-label']) }}
+            {{ Form::textarea('description', null, ['class' => 'form-control', 'rows' => 3]) }}
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+
+    {{ Form::submit(__('Create'), ['class' => 'btn btn-secondary btn-rounded']) }}
+</div>
+{{ Form::close() }}
+<script>
+    var baseUrl = "{{ route('category.sub-category', ':id') }}";
+</script>
+<script src="{{ asset('js/custom/document.js?') }}{{ time() }}"></script>

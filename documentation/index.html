@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="" />
+    <meta name="description" content="Dmeki">
+    <meta name="author" content="">
+    <title> Documentation</title>
+
+
+    <!-- Theme Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="httpss://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome CSS -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Prism CSS -->
+    <link href="assets/css/prism.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- sidebar start -->
+    <div class="cdx-sidebar">
+
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="#server_requirement" class="active">
+                    Server Requirement
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#database_process">
+                    Database Process
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#uploading_process">
+                    Uploading Process
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#installation">
+                    Installation
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#login_details">
+                    Login Details
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#system_upgrade_process">
+                    Software Upgrade Process
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#support">
+                    Support
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="cdx-layer"></div>
+    <!-- sidebar end -->
+
+    <!-- dock header start -->
+    <header class="dock-header">
+        <div class="custom-container ">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-contain">
+                        <ul>
+                            <li>
+                                <a href="#" target="-blank">Documentation</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <div class="menu-action d-lg-none">
+                                <i class="fa fa-bars open-menu"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- dock header end -->
+
+
+    <!-- theme body start-->
+    <div class="dock-body">
+
+        <!-- Intro start -->
+        <section class=" custom-padding" id="Overview">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header dock-title">
+                                <h4>Overview</h4>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="mb-3">
+                                    This documentation provides a step-by-step guide for installing, configuring, and
+                                    upgrading the software. It also includes server requirements, database setup, file
+                                    upload instructions, login credentials, and support information.
+
+                                </h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Intro end -->
+        <!-- Intro start -->
+        <section class="features space-py-60" id="server_requirement">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header dock-title">
+                                <h4>Server Requirement</h4>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-3">
+                                    Laravel requires certain minimum PHP versions and extensions. Make sure your web
+                                    server supports the following:
+                                </h5>
+                                <ul class="featuer-list mb-4">
+                                    <p><b>Minimum PHP Version: </b></p>
+                                    <li>PHP >= 8.1</li>
+
+                                    <p><b>Required PHP Extensions:</b></p>
+                                    <li>cURL PHP </li>
+                                    <li>DOM PHP </li>
+                                    <li>Fileinfo PHP </li>
+                                    <li>Filter PHP </li>
+                                    <li>Hash PHP </li>
+                                    <li>Mbstring PHP </li>
+                                    <li>OpenSSL PHP </li>
+                                    <li>PCRE PHP </li>
+                                    <li>PDO PHP </li>
+                                    <li>Session PHP </li>
+                                    <li>Tokenizer PHP </li>
+                                    <li>XML PHP </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Intro end -->
+
+
+        <!-- installing start -->
+        <section class="space-pb-60 custom-padding" id="database_process">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header ">
+                                <h4>How to Create Database</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 1: Access the Database Creation Tool</h5>
+                                    <p>First, navigate to the Databases section of your hosting panel. Click on MySQL®
+                                        Databases to begin the process. This tool allows you to create and manage your
+                                        databases and database users.</p>
+                                </div>
+                                <div class="card-body p-0">
+                                    <img src="assets/images/database1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 2: Create a New Database</h5>
+                                    <p>On the next screen, you will be able to create a new database. You will see a
+                                        field to enter the name of your new database. The hosting provider automatically
+                                        adds a prefix to the database name for security. After entering the name, click
+                                        Create Database.</p>
+                                </div>
+                                <div class="card-body p-0">
+                                    <img src="assets/images/database2.png" alt="" class="img-fluid mt-50">
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 3: Create a New User</h5>
+                                    <p>After creating the database, you'll need to create a user for it. Scroll down on
+                                        the same page to the Add New User section. Enter a Username and a strong
+                                        Password in the provided fields. Use the Password Generator tool to create a
+                                        secure password. Click Create User to save the new user.</p>
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <img src="assets/images/database3.png" alt="" class="img-fluid mt-50">
+                                </div>
+                                <div class="card-footer ">
+                                    <h5>Step 4: Add the User to the Database</h5>
+                                    <p>Once the user is created, you must associate them with the database. Scroll down
+                                        to the Add User To Database section. From the dropdown menus, select the User
+                                        you just created and the Database you want to link them to. Click Add to
+                                        proceed.</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 5: Assign Privileges</h5>
+                                    <p>The final step is to grant the new user permissions to manage the database. On
+                                        the Manage User Privileges page, check the box for ALL PRIVILEGES. This gives
+                                        the user full control over the database, allowing them to create, modify, and
+                                        delete tables and data. Click Make Changes to finalize the process. Your
+                                        database and user are now set up and ready to use.</p>
+                                </div>
+                                <div class="card-body p-0">
+                                    <img src="assets/images/database4.png" alt="" class="img-fluid mt-50">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- installing end -->
+
+        <!-- dock features start -->
+        <section class="space-pb-60" id="uploading_process">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header dock-title">
+                                <h4>How to Upload Files</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 1: Access the File Manager</h5>
+                                    <p>Log in to your cPanel account. In the main menu, look for the Files section and
+                                        click on File Manager. This will open the file manager interface in a new tab.
+                                    </p>
+                                </div>
+                                <div class="card-body p-0">
+                                    <img src="assets/images/upload1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 2: Navigate to the Correct Folder</h5>
+                                    <p>In the File Manager, navigate to the folder where you want to upload your files.
+                                        For a primary domain, this is typically the public_html folder. This folder is
+                                        the "web root" and contains all the files that are accessible to the public on
+                                        your website.</p>
+                                </div>
+                                <div class="card-body p-0">
+                                    <img src="assets/images/upload2.png" alt="" class="img-fluid mt-50">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 3: Select and Upload Files</h5>
+                                    <p>Once you are in the correct directory, click the Upload button in the toolbar at
+                                        the top of the page. This will open a new window where you can drag and drop
+                                        your files or click Select File to browse for files on your computer.</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 4: Verify the Upload</h5>
+                                    <p>After the upload is complete, you should see a 100% progress message. The
+                                        uploaded file should now appear in the folder you selected in the File Manager.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-pb-60" id="installation">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header dock-title">
+                                <h4>How to Install</h4>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 1: Start the Installation</h5>
+                                    <p>Open a web browser and navigate to your website's installation URL, which is typically yourdomain.com/install. This action will initiate the installation process and lead you to the App Installation Process page.
+</p>
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <img src="assets/images/installation1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 2: Check Server Requirements</h5>
+                                    <p>The next step is to ensure your server meets all the necessary requirements for
+                                        the application. Click the "Click to Check Your Server Requirements" button to
+                                        proceed.
+                                    </p>
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <img src="assets/images/installation2.png" alt="" class="img-fluid mt-50">
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="card-header ">
+                                    <h5>Step 3: Verify App Permissions</h5>
+                                    <p>After confirming the server extensions, the installer will check the necessary
+                                        directory permissions. Ensure all permissions are correct (often shown with a
+                                        green checkmark next to them) and then click "Click to Configure Your App
+                                        Environment".
+
+
+                                    </p>
+                                </div>
+
+
+                                <div class="card-body p-0">
+                                    <img src="assets/images/installation3.png" alt="" class="img-fluid mt-50">
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 4: Configure App Environment</h5>
+                                    <p>You will be given options to configure the app's environment. For a
+                                        straightforward installation, select "Using Form Wizard Setup".
+                                    </p>
+                                </div>
+
+
+                                <div class="card-body p-0">
+                                    <img src="assets/images/installation4.png" alt="" class="img-fluid mt-50">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 5: Enter App and Database Details</h5>
+                                    <p>This is a critical step where you link the application to your database. Fill in
+                                        the required fields with the information you gathered when setting up your
+                                        database. This includes the Database Host, Database Name, Database User Name,
+                                        and Database Password. You will also need to enter an Application Name and
+                                        Application Url. Once all the details are entered, click "Click to Install".
+                                    </p>
+                                </div>
+
+
+                                <div class="card-body p-0">
+                                    <img src="assets/images/installation5.png" alt="" class="img-fluid mt-50">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header ">
+                                    <h5>Step 6: Finalize Installation</h5>
+                                    <p>The installer will now run the installation process, which includes preparing the
+                                        database and running migrations. Once you see the "Application has been
+                                        successfully installed" message, you have successfully completed the process.
+                                        Click "Click here to exit" to finish.
+                                    </p>
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <img src="assets/images/installation6.png" alt="" class="img-fluid mt-50">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-pb-60" id="login_details">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header dock-title">
+                                <h4>Default User Login Details</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <strong>Super Admin Login Detail</strong>
+                                    <p> <strong>Email : </strong> superadmin@gmail.com</p>
+                                    <p> <strong>Password : </strong> 123456</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <strong>Owner Login Detail</strong>
+                                    <p> <strong>Email : </strong> owner@gmail.com</p>
+                                    <p> <strong>Password : </strong> 123456</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <strong>Manager Login Detail</strong>
+                                    <p> <strong>Email : </strong> manager@gmail.com</p>
+                                    <p> <strong>Password : </strong> 123456</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro start -->
+        <section class="features space-py-60" id="system_upgrade_process">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header dock-title">
+                                <h4>Software Upgrade Process</h4>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-3">
+                                    Before proceeding with the update, ensure that you have completed a full backup of
+                                    your software.
+                                </h5>
+                                <h5 class="mb-3">
+                                    Important Notes:
+                                </h5>
+                                <h6 class="mb-3">
+                                    1. Language Files Modifications:
+                                </h6>
+                                <ul class="featuer-list mb-4">
+                                    <li>If you have modified any language files, your changes will be overwritten. The
+                                        new version will come with updated language files, and your previous
+                                        customizations in <b>resources/lang</b> will be lost.</li>
+                                    <li>It's highly recommended that you back up your edited language files for future
+                                        reference.</li>
+
+                                </ul>
+
+                                <h6 class="mb-3">
+                                    2. File Modifications:
+                                </h6>
+                                <ul class="featuer-list mb-4">
+                                    <li>Any changes made to the software's core files will be lost after the update.
+                                        Ensure that you have backed up any customizations or modifications.</li>
+
+                                </ul>
+
+                                <h6 class="mb-3">
+                                    3. Disclaimer:
+                                </h6>
+                                <ul class="featuer-list mb-4">
+                                    <li>We are not responsible for any data loss that occurs during a manual update.
+                                        Please ensure that you follow the backup instructions carefully.
+                                    </li>
+
+                                </ul>
+
+
+                                <h5 class="mb-3">
+                                    Backup Instructions:
+                                </h5>
+                                <h6 class="mb-3">
+                                    1. Files to Back Up:
+                                </h6>
+                                <ul class="featuer-list mb-4">
+                                    <li><b>.env</b> file</li>
+                                    <li><b>.htaccess</b> file</li>
+                                    <li><b>storage</b> directory</li>
+                                </ul>
+
+                                <h6 class="mb-3">
+                                    2. Update Process:
+                                </h6>
+                                <ul class="featuer-list mb-4">
+                                    <li>Upload and replace all the files & folders on your server with the contents of
+                                        the main_file folder from the new version.</li>
+                                    <li>Restore your <b>.env</b>, <b>.htaccess</b>, <b>storage</b> files and folder back
+                                        onto your server.</li>
+                                    <li>Log in to the software and follow the steps in the update wizard to complete the
+                                        process.</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Intro end -->
+        <!-- support start -->
+
+        <section class="space-pb-60" id="support">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header dock-title">
+                                <h4>Support</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>If you have any queries, please create a support ticket, and our support team will
+                                    respond as soon as possible.</p>
+                                <h5><a href="http://support.smartwebinfotech.com">Create Ticket Now</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- support end -->
+    </div>
+
+    <!-- main jquery-->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Prism js-->
+    <script src="assets/js/prism.js"></script>
+
+    <!-- Custom script-->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
